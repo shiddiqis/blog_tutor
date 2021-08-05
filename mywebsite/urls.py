@@ -17,5 +17,5 @@ urlpatterns = [
     url(r'^blog1/$',  blog1views.index),
     url(r'^blog2/$',  blog2views.index),
     url(r'^about/', include('about.urls')),
-    url(r'^$',      views.index)
+    url(r'^$',      views.index, name='home')
 ]
